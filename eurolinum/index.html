@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Euro Linum Polska</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+              secondary: "#64748b",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .hero-section {
+          background-image: url('https://readdy.ai/api/search-image?query=high%20quality%20close-up%20texture%20of%20natural%20linen%20fabric%2C%20soft%20beige%20color%2C%20elegant%20and%20luxurious%20textile%20pattern%20with%20visible%20weave%20structure%2C%20clean%20and%20minimalist%20composition%20perfect%20for%20background%2C%20professional%20studio%20lighting&width=1920&height=800&seq=1&orientation=landscape');
+          background-size: cover;
+          background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+   <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="/" class="flex items-center">
+          <span class="text-3xl font-['Pacifico'] text-primary">Eurolinum</span>
+        </a>
+
+        <nav class="hidden md:flex space-x-8">
+          <a href="/index.html" class="text-gray-600 text-primary transition-colors"
+            >Strona główna</a
+          >
+          <a href="/produkty.html" class="hover:text-primary font-medium">Tkaniny</a>
+          <a
+            href="/o-nas"
+            class="text-gray-600 hover:text-primary transition-colors"
+            >O nas</a
+          >
+          <a
+            href="/kontakt.html"
+            class="text-gray-600 hover:text-primary transition-colors"
+            >Kontakt</a
+          >
+        </nav>
+
+        <div class="flex items-center space-x-4">
+          <div
+            class="w-10 h-10 flex items-center justify-center cursor-pointer hover:bg-gray-100 rounded-full"
+          >
+            <i class="ri-search-line ri-lg text-gray-600"></i>
+          </div>
+          <div
+            class="md:hidden w-10 h-10 flex items-center justify-center cursor-pointer hover:bg-gray-100 rounded-full"
+          >
+            <i class="ri-menu-line ri-lg text-gray-600"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section min-h-[600px] flex items-center pt-20">
+      <div class="container mx-auto px-6">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl font-bold text-gray-800 mb-6">
+            Euro Linum Polska
+          </h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Wejdź do naszego świata lnu i zostań z nami na zawsze...
+          </p>
+          <button
+            class="px-8 py-3 bg-primary text-white !rounded-button hover:bg-primary/90"
+          >
+            Poznaj nasze produkty
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">O nas</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20textile%20factory%20interior%20with%20workers%20examining%20fabric%20samples%20on%20a%20large%20table%2C%20bright%20and%20clean%20industrial%20space%20with%20natural%20lighting%2C%20professional%20manufacturing%20environment&width=600&height=400&seq=2&orientation=landscape"
+              alt="Nasza fabryka"
+              class="rounded-lg w-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-4">Tradycja i innowacja</h3>
+            <p class="text-gray-600 mb-6">
+              Euro Linum Polska to wiodący producent wysokiej jakości tkanin
+              lnianych w Polsce. Od ponad 20 lat dostarczamy najlepsze produkty
+              tekstylne, łącząc tradycyjne metody produkcji z nowoczesnymi
+              technologiami.
+            </p>
+            <p class="text-gray-600">
+              Nasza firma specjalizuje się w produkcji tkanin naturalnych, ze
+              szczególnym uwzględnieniem lnu. Wszystkie nasze produkty powstają
+              z najwyższej jakości surowców, a proces produkcji jest starannie
+              kontrolowany na każdym etapie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">Nasze Produkty</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=neatly%20folded%20stack%20of%20natural%20linen%20fabrics%20in%20various%20neutral%20colors%2C%20showing%20texture%20and%20quality%2C%20minimalist%20composition%20on%20white%20background&width=300&height=200&seq=3&orientation=landscape"
+              alt="Tkaniny naturalne"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Tkaniny naturalne</h3>
+            <p class="text-gray-600">
+              Szeroki wybór tkanin lnianych w różnych gramaturach i
+              wykończeniach.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=professionally%20finished%20linen%20fabric%20rolls%20displayed%20in%20a%20modern%20showroom%2C%20variety%20of%20colors%20and%20patterns%2C%20elegant%20presentation&width=300&height=200&seq=4&orientation=landscape"
+              alt="Tkaniny gotowe"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Tkaniny gotowe</h3>
+            <p class="text-gray-600">
+              Gotowe tkaniny dekoracyjne i użytkowe do różnych zastosowań.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=luxury%20linen%20bedding%20set%20with%20pillows%20and%20duvet%20cover%20in%20soft%20neutral%20colors%2C%20styled%20on%20a%20bed%2C%20showing%20quality%20and%20comfort&width=300&height=200&seq=5&orientation=landscape"
+              alt="Wyroby pościelowe"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Wyroby pościelowe</h3>
+            <p class="text-gray-600">
+              Luksusowa pościel i dodatki do sypialni z naturalnego lnu.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <img
+              src="https://readdy.ai/api/search-image?query=custom%20made%20linen%20curtains%20and%20drapes%20in%20elegant%20setting%2C%20showing%20craftsmanship%20and%20quality%20of%20fabric&width=300&height=200&seq=6&orientation=landscape"
+              alt="Dekoracje"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">Dekoracje</h3>
+            <p class="text-gray-600">
+              Zasłony, obrusy i inne tekstylia dekoracyjne na zamówienie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16">Kontakt</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <form class="space-y-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Imię i nazwisko</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Wiadomość</label
+                >
+                <textarea
+                  rows="4"
+                  class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                ></textarea>
+              </div>
+              <button
+                class="w-full px-6 py-3 bg-primary text-white !rounded-button hover:bg-primary/90"
+              >
+                Wyślij wiadomość
+              </button>
+            </form>
+          </div>
+          <div class="space-y-6">
+            <div class="rounded-lg overflow-hidden h-64">
+              <img
+                src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png"
+                alt="Mapa"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10"
+                >
+                  <i class="ri-map-pin-line text-primary"></i>
+                </div>
+                <p class="text-gray-600">ul. Przemysłowa 15, 00-450 Warszawa</p>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10"
+                >
+                  <i class="ri-phone-line text-primary"></i>
+                </div>
+                <p class="text-gray-600">+48 22 123 45 67</p>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10"
+                >
+                  <i class="ri-mail-line text-primary"></i>
+                </div>
+                <p class="text-gray-600">kontakt@eurolinum.pl</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 block"
+              >Euro Linum</a
+            >
+            <p class="text-gray-400">
+              Najwyższej jakości tkaniny lniane i produkty tekstylne.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Menu</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Strona główna</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">O nas</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Produkty</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Kontakt</h4>
+            <ul class="space-y-2">
+              <li class="text-gray-400">ul. Przemysłowa 15</li>
+              <li class="text-gray-400">00-450 Warszawa</li>
+              <li class="text-gray-400">+48 22 123 45 67</li>
+              <li class="text-gray-400">kontakt@eurolinum.pl</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Dokumenty</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Polityka prywatności</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Regulamin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 Euro Linum Polska. Wszelkie prawa zastrzeżone.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
