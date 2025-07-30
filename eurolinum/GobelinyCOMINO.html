@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TKANINA bawełniana EU03N001 - Naturalna tkanina bawełniana</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: "#3b82f6", secondary: "#64748b" },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .fabric-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%233CAEA3' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .thumbnail {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .thumbnail:hover {
+            opacity: 0.8;
+        }
+
+        .thumbnail.active {
+            border-color: #c9a227;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .custom-radio {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+
+        input[type="radio"]:checked+.custom-radio {
+            border-color: #c9a227;
+        }
+
+        input[type="radio"]:checked+.custom-radio:after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 10px;
+            height: 10px;
+            background-color: #c9a227;
+            border-radius: 50%;
+        }
+
+        .space-x-3 {
+            display: flex;
+            flex-wrap: wrap;
+            /* POZWALA NA ZAWIJANIE */
+            gap: 10px;
+            /* odstęp między kółkami */
+            justify-content: center;
+        }
+
+        .h-12 {
+            width: 20px;
+            /* możesz zmienić na inną wartość */
+            height: 20px;
+            border-radius: 50%;
+            /* robi kółko */
+            color: white;
+            font-size: 16px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            /* zapobiega skalowaniu */
+        }
+    </style>
+</head>
+
+<body class="fabric-texture">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary">eurolinum</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/eurolinum/eurolinum/index.html"
+                    class="text-gray-600 hover:text-primary transition-colors">Strona główna</a>
+                <a href="/eurolinum/eurolinum/produkty.html"
+                    class="text-gray-600 hover:text-primary transition-colors">Tkaniny</a>
+                <a href="#" class="text-gray-600 hover:text-primary transition-colors">O nas</a>
+                <a href="/eurolinum/eurolinum/kontakt.html"
+                    class="text-gray-600 hover:text-primary transition-colors">Kontakt</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button
+                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                    <i class="ri-search-line ri-lg"></i>
+                </button>
+                <button
+                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors md:hidden"
+                    id="menuToggle">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-2 text-sm text-gray-500">
+            <div class="flex items-center space-x-2">
+                <a href="/eurolinum/eurolinum/index.html" class="hover:text-primary transition-colors">Strona
+                    główna</a>
+                <i class="ri-arrow-right-s-line ri-sm"></i>
+                <a href="#" class="hover:text-primary transition-colors">Tkaniny lniane</a>
+                <i class="ri-arrow-right-s-line ri-sm"></i>
+                <span class="text-primary">EU03N001</span>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="md:flex">
+                <!-- Product Gallery -->
+                <div class="md:w-1/2 p-6">
+                    <div class="relative mb-4 overflow-hidden rounded-lg aspect-square">
+                        <img id="mainImage"
+                            src="https://static.readdy.ai/image/1503911900fe0a3b5cbbb7ec9720c48d/e3e73bfe91af6ab80ce64ebb46bf0254.jfif"
+                            alt="Tkanina bawełniana EU03N001" class="w-full h-full object-cover rounded-lg" />
+                        <div
+                            class="absolute top-4 left-4 bg-primary bg-opacity-90 text-white px-3 py-1 rounded-full text-xs font-medium">
+                            100% naturalna bawełna
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Info -->
+                <div class="md:w-1/2 p-6 md:border-l border-gray-100">
+                    <h1 class="text-3xl font-semibold mb-2">Tkanina bawełna 100% MUŚLIN</h1>
+                    <div class="mb-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded mr-2">Kod: EU03N001</span>
+                            <span class="text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded" id="colorCode">Kolor:
+                                ....</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-sm font-medium text-gray-700 mb-2">Wybierz kolor:</label>
+                            <div class="flex space-x-3">
+                                <button
+                                    class="w-12 h-12 rounded-full border-2 border-gray-300 hover:border-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                                    style="background-image: url('link');" data-color="...." data-code="kod"
+                                    data-image="link"></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-6 text-gray-600">
+                        <p>
+                            ???
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-500 mb-1">Gramatura</p>
+                            <p class="font-medium">350 g/m²</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-500 mb-1">Szerokość</p>
+                            <p class="font-medium">280 cm</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-500 mb-1">Skład</p>
+                            <p class="font-medium">Skład Bawełna 35% Poliester 65%</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-500 mb-1">Wykończenie</p>
+                            <p class="font-medium">Wykończenie. Niezmiękczone, indor</p>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-primary hover:bg-opacity-90 text-white py-3 px-6 rounded-button font-medium flex items-center justify-center mb-6 whitespace-nowrap">
+                        <i class="ri-mail-send-line ri-lg mr-2"></i>
+                        Zapytaj o produkt
+                    </button>
+                </div>
+            </div>
+            <!-- Product Description -->
+            <div class="p-6 border-t border-gray-100">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">O tkaninie</h2>
+                    <div class="prose max-w-none mb-8">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Gobeliny dekoracyjne COMINO to tkaniny indoor 280 cm – elegancja i komfort do Twojego
+                            wnętrza
+                            Styl, który tworzy atmosferę
+                            Nasza tkanina typu indoor o szerokości 280 cm to połączenie wyjątkowej estetyki z
+                            funkcjonalnością, której oczekujesz od materiałów do użytku wewnętrznego. Miękka w dotyku, a
+                            jednocześnie trwała i łatwa w pielęgnacji – idealnie sprawdza się jako tkanina obiciowa,
+                            dekoracyjna oraz użytkowa.
+                            To doskonały wybór na zasłony, rolety rzymskie, poduszki, narzuty, tapicerkę meblową czy
+                            wezgłowia. Świetnie sprawdzi się również jako materiał na torby, plecaki, a nawet eleganckie
+                            żakiety i lekkie płaszcze. Dzięki bogatej gamie kolorów i wzorów dopasujesz ją do każdego
+                            wnętrza – od klasycznych po nowoczesne.
+                            Szerokość 280 cm sprawia, że tkanina jest bardzo wydajna i wygodna w pracy, zwłaszcza przy
+                            większych projektach. Oferuje świetne krycie, układa się równomiernie i pozwala osiągnąć
+                            profesjonalny efekt końcowy.
+                            Wybierz tkaninę indoor – stworzoną z myślą o przytulnych, pięknych i stylowych wnętrzach.
+                            Zadbaj o detale, które robią różnicę.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-medium mb-4">
+                            🪡 Dlaczego pokochasz ten len?
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">•</span>
+                                <span>Przewiewny, oddychający, idealny na ciepłe dni</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">•</span>
+                                <span>Miękki i gotowy do szycia – bez dekatyzowania</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">•</span>
+                                <span>Trwały i naturalny – 100% len</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">•</span>
+                                <span>Działa antystatycznie, nie uczula</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">•</span>
+                                <span>Tworzy rzeczy z charakterem</span>
+                            </li>
+                        </ul>
+                        <p class="mt-4 italic text-gray-600">
+                            Zaproś naturę do swojej kolekcji.<br />Bo moda zaczyna się od
+                            tkaniny z historią.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Technical Specifications -->
+            <div class="p-6 bg-gray-50 border-t border-gray-100">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">
+                        Specyfikacja techniczna
+                    </h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full mb-8">
+                            <tbody>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Skład</td>
+                                    <td class="py-3 px-4">Skład Bawełna 35% Poliester 65%</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Szerokość</td>
+                                    <td class="py-3 px-4">280 cm</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Gramatura</td>
+                                    <td class="py-3 px-4">350 g/m²</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Przeznaczenie</td>
+                                    <td class="py-3 px-4">
+                                        Wykończenie. Niezmiękczone, indor
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Kolor</td>
+                                    <td class="py-3 px-4">Ciemna zieleń - 1401</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Ilość barw</td>
+                                    <td class="py-3 px-4">Jednobarwny</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Faktura</td>
+                                    <td class="py-3 px-4">Gładka</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Splot</td>
+                                    <td class="py-3 px-4">Płócienny</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="py-3 px-4 font-medium">Wykończenie</td>
+                                    <td class="py-3 px-4">Prana, zmiękczana</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-medium">Pielęgnacja</td>
+                                    <td class="py-3 px-4">
+                                        <div class="flex space-x-2">
+                                            <div
+                                                class="w-8 h-8 border border-gray-300 flex items-center justify-center bg-white">
+                                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4 6h16v12H4V6z" stroke="currentColor" stroke-width="2" />
+                                                    <path d="M8 10h8" stroke="currentColor" stroke-width="2" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="w-8 h-8 border border-gray-300 flex items-center justify-center bg-white">
+                                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12" cy="12" r="8" stroke="currentColor"
+                                                        stroke-width="2" />
+                                                    <path d="M12 8v8" stroke="currentColor" stroke-width="2" />
+                                                    <path d="M8 12h8" stroke="currentColor" stroke-width="2" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="w-8 h-8 border border-gray-300 flex items-center justify-center bg-white">
+                                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12" cy="12" r="8" stroke="currentColor"
+                                                        stroke-width="2" />
+                                                    <path d="M8 12h8" stroke="currentColor" stroke-width="2" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="w-8 h-8 border border-gray-300 flex items-center justify-center bg-white">
+                                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 18L18 6M6 6l12 12" stroke="currentColor"
+                                                        stroke-width="2" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-medium mb-4">Pochodzenie</h3>
+                        <p class="mb-4">
+                            Nasze tkaniny lniane pochodzą od renomowanych europejskich
+                            producentów, którzy od pokoleń specjalizują się w produkcji
+                            najwyższej jakości materiałów naturalnych.
+                        </p>
+                        <div class="flex items-center justify-center">
+                            <img src="https://readdy.ai/api/search-image?query=map%20of%20europe%20with%20subtle%20highlight%20on%20textile%20manufacturing%20regions%2C%20minimalist%20design%2C%20light%20colors%2C%20professional%20infographic%20style%2C%20clean%20background&width=400&height=300&seq=5&orientation=landscape"
+                                alt="Mapa pochodzenia" class="max-w-full h-auto rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Inquiry Form -->
+            <div class="p-6 border-t border-gray-100">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">
+                        Zapytaj o produkt
+                    </h2>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Imię i nazwisko
+                                    *</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    required />
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    required />
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefon</label>
+                            <input type="tel" id="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="quantity" class="block text-sm font-medium text-gray-700 mb-1">Ilość (metry)
+                                    *</label>
+                                <input type="number" id="quantity" min="1" step="0.1"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Przeznaczenie *</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="purpose" value="clothing" checked />
+                                        <span class="custom-radio"></span>
+                                        <span>Odzież</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="purpose" value="home" />
+                                        <span class="custom-radio"></span>
+                                        <span>Wystrój wnętrz</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="purpose" value="other" />
+                                        <span class="custom-radio"></span>
+                                        <span>Inne</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="deadline" class="block text-sm font-medium text-gray-700 mb-1">Preferowany
+                                termin realizacji</label>
+                            <input type="date" id="deadline"
+                                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Dodatkowe
+                                uwagi</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="terms" type="checkbox"
+                                    class="focus:ring-primary h-4 w-4 text-primary border-gray-300 rounded" required />
+                            </div>
+                            <div class="ml-3 text-sm">
+                                <label for="terms" class="font-medium text-gray-700">Akceptuję
+                                    <a href="#" class="text-primary hover:underline">politykę prywatności</a>
+                                    *</label>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-opacity-90 text-white py-3 px-6 rounded-button font-medium whitespace-nowrap">
+                            Wyślij zapytanie
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- Inspiration Section -->
+            <div class="p-6 border-t border-gray-100 bg-gray-50">
+                <h2 class="text-2xl font-semibold mb-6 text-center">Inspiracje</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20linen%20dress%20in%20dark%20mustard%20color%20on%20mannequin%2C%20minimalist%20design%2C%20summer%20fashion%2C%20natural%20fabric%2C%20studio%20photography%2C%20soft%20lighting%2C%20neutral%20background&width=400&height=500&seq=6&orientation=portrait"
+                            alt="Sukienka bawełniana" class="w-full h-64 object-cover object-top" />
+                        <div class="p-4">
+                            <h3 class="font-medium text-lg mb-2">Sukienka bawełniana</h3>
+                            <p class="text-gray-600 text-sm">
+                                Lekka, przewiewna sukienka idealna na upalne dni. Naturalny
+                                len zapewnia komfort i elegancki wygląd.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=linen%20shirt%20in%20dark%20mustard%20color%2C%20casual%20style%2C%20natural%20fabric%2C%20studio%20photography%2C%20soft%20lighting%2C%20neutral%20background%2C%20product%20photography&width=400&height=500&seq=7&orientation=portrait"
+                            alt="Koszula bawełniana" class="w-full h-64 object-cover object-top" />
+                        <div class="p-4">
+                            <h3 class="font-medium text-lg mb-2">Koszula bawełniana</h3>
+                            <p class="text-gray-600 text-sm">
+                                Klasyczna koszula z naturalnego lnu. Doskonała zarówno do
+                                codziennych, jak i bardziej eleganckich stylizacji.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=linen%20cushions%20and%20home%20textiles%20in%20dark%20mustard%20color%2C%20interior%20design%2C%20natural%20fabric%2C%20soft%20lighting%2C%20neutral%20background%2C%20minimalist%20style&width=400&height=500&seq=8&orientation=portrait"
+                            alt="Dodatki do domu" class="w-full h-64 object-cover object-top" />
+                        <div class="p-4">
+                            <h3 class="font-medium text-lg mb-2">Dodatki do domu</h3>
+                            <p class="text-gray-600 text-sm">
+                                Poduszki, obrusy i inne tekstylia domowe z naturalnego lnu
+                                nadadzą wnętrzu przytulny, naturalny charakter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Similar Products -->
+            <div class="p-6 border-t border-gray-100">
+                <h2 class="text-2xl font-semibold mb-6 text-center">
+                    Podobne tkaniny
+                </h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
+                        <img src="https://readdy.ai/api/search-image?query=natural%20linen%20fabric%20in%20sage%20green%20color%2C%20textile%20texture%2C%20close-up%2C%20soft%20draping%2C%20premium%20quality%2C%20studio%20lighting%2C%20neutral%20background%2C%20professional%20product%20photography&width=300&height=300&seq=9&orientation=squarish"
+                            alt="Tkanina bawełniana 4C34" class="w-full h-48 object-cover" />
+                        <div class="p-4">
+                            <h3 class="font-medium mb-1">Tkanina bawełniana 4C34</h3>
+                            <p class="text-sm text-gray-500 mb-3">Szałwia zielona</p>
+                            <a href="#" class="text-primary text-sm font-medium hover:underline flex items-center">
+                                Zobacz produkt
+                                <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
+                        <img src="https://readdy.ai/api/search-image?query=natural%20linen%20fabric%20in%20terracotta%20color%2C%20textile%20texture%2C%20close-up%2C%20soft%20draping%2C%20premium%20quality%2C%20studio%20lighting%2C%20neutral%20background%2C%20professional%20product%20photography&width=300&height=300&seq=10&orientation=squarish"
+                            alt="Tkanina bawełniana 4C35" class="w-full h-48 object-cover" />
+                        <div class="p-4">
+                            <h3 class="font-medium mb-1">Tkanina bawełniana 4C35</h3>
+                            <p class="text-sm text-gray-500 mb-3">Terakota</p>
+                            <a href="#" class="text-primary text-sm font-medium hover:underline flex items-center">
+                                Zobacz produkt
+                                <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
+                        <img src="https://readdy.ai/api/search-image?query=natural%20linen%20fabric%20in%20navy%20blue%20color%2C%20textile%20texture%2C%20close-up%2C%20soft%20draping%2C%20premium%20quality%2C%20studio%20lighting%2C%20neutral%20background%2C%20professional%20product%20photography&width=300&height=300&seq=11&orientation=squarish"
+                            alt="Tkanina bawełniana 4C36" class="w-full h-48 object-cover" />
+                        <div class="p-4">
+                            <h3 class="font-medium mb-1">Tkanina bawełniana 4C36</h3>
+                            <p class="text-sm text-gray-500 mb-3">Granatowy</p>
+                            <a href="#" class="text-primary text-sm font-medium hover:underline flex items-center">
+                                Zobacz produkt
+                                <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
+                        <img src="https://readdy.ai/api/search-image?query=natural%20linen%20fabric%20in%20beige%20color%2C%20textile%20texture%2C%20close-up%2C%20soft%20draping%2C%20premium%20quality%2C%20studio%20lighting%2C%20neutral%20background%2C%20professional%20product%20photography&width=300&height=300&seq=12&orientation=squarish"
+                            alt="Tkanina bawełniana 4C37" class="w-full h-48 object-cover" />
+                        <div class="p-4">
+                            <h3 class="font-medium mb-1">Tkanina bawełniana 4C37</h3>
+                            <p class="text-sm text-gray-500 mb-3">Naturalny beż</p>
+                            <a href="#" class="text-primary text-sm font-medium hover:underline flex items-center">
+                                Zobacz produkt
+                                <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">eurolinum</a>
+                    <p class="text-gray-400 mb-4">
+                        Najwyższej jakości naturalne tkaniny dla Twojej kreatywności.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill ri-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-instagram-fill ri-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-pinterest-fill ri-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Kategorie</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Tkaniny lniane</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Tkaniny bawełniane</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Tkaniny wełniane</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Tkaniny jedwabne</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Informacje</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">O nas</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Dostawa i płatność</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Polityka
+                                prywatności</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Regulamin</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2 text-gray-400">
+                        <i class="ri-secure-payment-line ri-lg"></i>
+                        <span>Bezpieczne płatności</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 eurolinum. Wszelkie prawa zastrzeżone.
+                </p>
+                <div class="flex space-x-4">
+                    <i class="ri-visa-line ri-lg text-gray-400"></i>
+                    <i class="ri-mastercard-line ri-lg text-gray-400"></i>
+                    <i class="ri-paypal-line ri-lg text-gray-400"></i>
+                    <i class="ri-bank-card-line ri-lg text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script id="mobileMenuScript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const nav = document.querySelector("nav");
+            menuToggle.addEventListener("click", function () {
+                nav.classList.toggle("hidden");
+            });
+        });
+    </script>
+    <script id="colorSelectorScript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const colorButtons = document.querySelectorAll("[data-color]");
+            const mainImage = document.getElementById("mainImage");
+            const colorCode = document.getElementById("colorCode");
+            colorButtons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    const color = this.dataset.color;
+                    const code = this.dataset.code;
+                    const image = this.dataset.image;
+                    colorButtons.forEach((btn) =>
+                        btn.classList.remove("active", "border-primary"),
+                    );
+                    this.classList.add("active", "border-primary");
+                    mainImage.src = image;
+                    colorCode.textContent = `Kolor: ${color} (${code})`;
+                    mainImage.style.opacity = "0";
+                    setTimeout(() => {
+                        mainImage.style.opacity = "1";
+                    }, 50);
+                });
+            });
+        });
+    </script>
+    <style>
+        #mainImage {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</body>
+
+</html>
