@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eurolinum - Strona Główna</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#F1F5F9'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans scroll-smooth">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="flex items-center justify-between px-4 py-3">
+            <button class="w-8 h-8 flex items-center justify-center cursor-pointer">
+                <i class="ri-menu-line text-xl text-gray-700"></i>
+            </button>
+            <div class="font-['Pacifico'] text-xl text-primary">Eurolinum</div>
+            <button class="w-8 h-8 flex items-center justify-center cursor-pointer">
+                <i class="ri-search-line text-xl text-gray-700"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-16 pb-20">
+        <section class="relative h-48 bg-gradient-to-r from-primary to-blue-600 overflow-hidden">
+            <img src="https://readdy.ai/api/search-image?query=Modern%20home%20interior%20design%2C%20elegant%20living%20room%20with%20contemporary%20furniture%2C%20luxury%20textiles%20and%20linens%2C%20soft%20lighting%2C%20clean%20minimalist%20aesthetic%2C%20high-quality%20fabrics%2C%20sophisticated%20color%20palette%2C%20premium%20home%20decor%2C%20stylish%20bedroom%20setup%20with%20beautiful%20bedding&width=375&height=192&seq=hero1&orientation=landscape" 
+                 alt="Eurolinum Hero" class="w-full h-full object-cover object-top">
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                <div class="text-center text-white px-6">
+                    <h1 class="text-2xl font-bold mb-2">Najwyższa jakość tkanin</h1>
+                    <p class="text-sm opacity-90">Odkryj naszą kolekcję premium</p>
+                </div>
+            </div>
+        </section>
+        <section class="px-4 py-6">
+            <h2 class="text-lg font-semibold mb-4 text-center">Kategorie produktów</h2>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="text-center cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-2 rounded-lg overflow-hidden bg-secondary">
+                        <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20Luxury%20bedding%20and%20bed%20linens%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=64&height=64&seq=cat1&orientation=squarish" 
+                             alt="Pościel" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-gray-700" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Pościel</span>
+                </div>
+                <div class="text-center cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-2 rounded-lg overflow-hidden bg-secondary">
+                        <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20Elegant%20curtains%20and%20window%20treatments%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=64&height=64&seq=cat2&orientation=squarish" 
+                             alt="Zasłony" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-gray-700" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Zasłony</span>
+                </div>
+                <div class="text-center cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-2 rounded-lg overflow-hidden bg-secondary">
+                        <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20Soft%20towels%20and%20bathroom%20textiles%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=64&height=64&seq=cat3&orientation=squarish" 
+                             alt="Ręczniki" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-gray-700" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ręczniki</span>
+                </div>
+                <div class="text-center cursor-pointer">
+                    <div class="w-16 h-16 mx-auto mb-2 rounded-lg overflow-hidden bg-secondary">
+                        <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20Decorative%20pillows%20and%20cushions%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=64&height=64&seq=cat4&orientation=squarish" 
+                             alt="Poduszki" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xs text-gray-700" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Poduszki</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 py-6 bg-secondary">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-lg font-semibold">Bestsellery</h2>
+                <button class="text-primary text-sm cursor-pointer">Zobacz wszystkie</button>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Premium%20white%20cotton%20bed%20sheets%20set%2C%20luxury%20bedding%20collection%2C%20high-quality%20fabric%20texture%2C%20elegant%20bedroom%20styling%2C%20soft%20natural%20lighting%2C%20clean%20minimalist%20background%2C%20product%20photography%20style%2C%20sophisticated%20home%20textiles%2C%20comfortable%20sleeping%20essentials&width=160&height=160&seq=best1&orientation=squarish" 
+                             alt="Pościel bawełniana" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-medium text-sm mb-1">Pościel bawełniana Premium</h3>
+                        <p class="text-primary font-semibold text-sm">299 zł</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Elegant%20blackout%20curtains%2C%20modern%20window%20treatments%2C%20luxury%20home%20decor%2C%20sophisticated%20interior%20design%2C%20premium%20fabric%20quality%2C%20stylish%20room%20decoration%2C%20contemporary%20living%20space%2C%20high-end%20textile%20products%2C%20beautiful%20drapery%20collection&width=160&height=160&seq=best2&orientation=squarish" 
+                             alt="Zasłony zaciemniające" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-medium text-sm mb-1">Zasłony zaciemniające Lux</h3>
+                        <p class="text-primary font-semibold text-sm">459 zł</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 py-6">
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 text-center">
+                <h2 class="text-xl font-bold text-gray-800 mb-2">Wyprzedaż sezonowa</h2>
+                <p class="text-gray-600 text-sm mb-4">Rabaty do 50% na wybrane produkty</p>
+                <button class="bg-primary text-white px-6 py-2 rounded-button text-sm font-medium cursor-pointer !rounded-button">
+                    Sprawdź oferty
+                </button>
+            </div>
+        </section>
+
+        <section class="px-4 py-6">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-lg font-semibold">Nowości</h2>
+                <button class="text-primary text-sm cursor-pointer">Zobacz więcej</button>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center space-x-4 bg-white rounded-lg shadow-sm p-3 cursor-pointer">
+                    <div class="w-16 h-16 bg-secondary rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://readdy.ai/api/search-image?query=Luxury%20bamboo%20towel%20set%2C%20eco-friendly%20bathroom%20textiles%2C%20soft%20absorbent%20fabric%2C%20natural%20organic%20materials%2C%20spa-quality%20towels%2C%20premium%20bathroom%20accessories%2C%20sustainable%20home%20products%2C%20elegant%20neutral%20colors%2C%20high-quality%20textile%20photography&width=64&height=64&seq=new1&orientation=squarish" 
+                             alt="Ręczniki bambusowe" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-medium text-sm mb-1">Ręczniki bambusowe Eco</h3>
+                        <p class="text-gray-600 text-xs mb-1">Naturalne, antybakteryjne</p>
+                        <p class="text-primary font-semibold text-sm">189 zł</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4 bg-white rounded-lg shadow-sm p-3 cursor-pointer">
+                    <div class="w-16 h-16 bg-secondary rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://readdy.ai/api/search-image?query=Decorative%20throw%20pillows%2C%20modern%20home%20accessories%2C%20stylish%20cushions%20collection%2C%20contemporary%20interior%20design%2C%20premium%20fabric%20textures%2C%20elegant%20living%20room%20decor%2C%20sophisticated%20color%20palette%2C%20luxury%20home%20textiles%2C%20comfortable%20seating%20accessories&width=64&height=64&seq=new2&orientation=squarish" 
+                             alt="Poduszki dekoracyjne" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-medium text-sm mb-1">Poduszki dekoracyjne Modern</h3>
+                        <p class="text-gray-600 text-xs mb-1">Zestaw 3 sztuk</p>
+                        <p class="text-primary font-semibold text-sm">129 zł</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4 bg-white rounded-lg shadow-sm p-3 cursor-pointer">
+                    <div class="w-16 h-16 bg-secondary rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://readdy.ai/api/search-image?query=Silk%20bed%20sheets%2C%20luxury%20bedroom%20textiles%2C%20premium%20quality%20fabric%2C%20elegant%20sleeping%20essentials%2C%20sophisticated%20home%20decor%2C%20high-end%20bedding%20collection%2C%20smooth%20texture%20materials%2C%20refined%20interior%20styling%2C%20comfortable%20luxury%20bedding&width=64&height=64&seq=new3&orientation=squarish" 
+                             alt="Pościel jedwabna" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-medium text-sm mb-1">Pościel jedwabna Silk</h3>
+                        <p class="text-gray-600 text-xs mb-1">100% naturalny jedwab</p>
+                        <p class="text-primary font-semibold text-sm">899 zł</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white px-4 py-8">
+        <div class="space-y-6">
+            <div class="text-center">
+                <div class="font-['Pacifico'] text-2xl text-primary mb-2">Eurolinum</div>
+                <p class="text-gray-400 text-sm">Najwyższa jakość tkanin od 1995 roku</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="font-semibold mb-3 text-center">Newsletter</h3>
+                <p class="text-gray-400 text-xs text-center mb-3">Otrzymuj informacje o nowościach i promocjach</p>
+                <div class="flex space-x-2">
+                    <input type="email" placeholder="Twój adres email" 
+                           class="flex-1 px-3 py-2 bg-gray-700 border-none rounded text-sm text-white placeholder-gray-400">
+                    <button class="bg-primary text-white px-4 py-2 rounded-button text-sm cursor-pointer !rounded-button">
+                        Zapisz
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 text-sm">
+                <div>
+                    <h4 class="font-semibold mb-3">Kategorie</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="cursor-pointer hover:text-white">Pościel</a></li>
+                        <li><a href="#" class="cursor-pointer hover:text-white">Zasłony</a></li>
+                        <li><a href="#" class="cursor-pointer hover:text-white">Ręczniki</a></li>
+                        <li><a href="#" class="cursor-pointer hover:text-white">Poduszki</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Informacje</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="cursor-pointer hover:text-white">O nas</a></li>
+                        <li><a href="#" class="cursor-pointer hover:text-white">Kontakt</a></li>
+                        <li><a href="#" class="cursor-pointer hover:text-white">Dostawa</a></li>
+                        <li><a href="#" class="cursor-pointer hover:text-white">Zwroty</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h4 class="font-semibold mb-3">Kontakt</h4>
+                <div class="space-y-2 text-gray-400 text-sm">
+                    <p class="flex items-center justify-center">
+                        <i class="ri-phone-line w-4 h-4 flex items-center justify-center mr-2"></i>
+                        +48 123 456 789
+                    </p>
+                    <p class="flex items-center justify-center">
+                        <i class="ri-mail-line w-4 h-4 flex items-center justify-center mr-2"></i>
+                        kontakt@eurolinum.pl
+                    </p>
+                    <p class="flex items-center justify-center">
+                        <i class="ri-map-pin-line w-4 h-4 flex items-center justify-center mr-2"></i>
+                        ul. Tekstylna 15, 00-001 Warszawa
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center cursor-pointer hover:bg-primary transition-colors">
+                    <i class="ri-facebook-fill text-lg"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center cursor-pointer hover:bg-primary transition-colors">
+                    <i class="ri-instagram-line text-lg"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center cursor-pointer hover:bg-primary transition-colors">
+                    <i class="ri-youtube-line text-lg"></i>
+                </a>
+            </div>
+
+            <div class="flex justify-center space-x-4 py-4">
+                <div class="flex items-center space-x-2 text-gray-400 text-xs">
+                    <i class="ri-truck-line w-4 h-4 flex items-center justify-center"></i>
+                    <span>Darmowa dostawa</span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-400 text-xs">
+                    <i class="ri-shield-check-line w-4 h-4 flex items-center justify-center"></i>
+                    <span>Gwarancja jakości</span>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-3 mb-4">
+                <i class="ri-visa-line text-2xl text-gray-400"></i>
+                <i class="ri-mastercard-line text-2xl text-gray-400"></i>
+                <i class="ri-paypal-line text-2xl text-gray-400"></i>
+            </div>
+
+            <div class="border-t border-gray-800 pt-4 text-center">
+                <div class="flex flex-col space-y-2 text-xs text-gray-400">
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="cursor-pointer hover:text-white">Polityka prywatności</a>
+                        <a href="#" class="cursor-pointer hover:text-white">Regulamin</a>
+                    </div>
+                    <p>&copy; 2025 Eurolinum. Wszelkie prawa zastrzeżone.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-24 right-4 w-12 h-12 bg-primary text-white rounded-full shadow-lg opacity-0 transition-opacity duration-300 cursor-pointer z-40">
+        <i class="ri-arrow-up-line text-lg"></i>
+    </button>
+
+    <script id="menu-toggle">
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('header button');
+            
+            menuButton.addEventListener('click', function() {
+                console.log('Menu clicked');
+            });
+        });
+    </script>
+
+    <script id="back-to-top">
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.opacity = '1';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script id="newsletter-form">
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.querySelector('footer .flex input[type="email"]').parentElement;
+            const emailInput = newsletterForm.querySelector('input[type="email"]');
+            const submitButton = newsletterForm.querySelector('button');
+            
+            submitButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                const email = emailInput.value.trim();
+                
+                if (email && email.includes('@')) {
+                    emailInput.value = '';
+                    
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'text-green-400 text-xs text-center mt-2';
+                    successMessage.textContent = 'Dziękujemy za zapisanie się do newslettera!';
+                    
+                    newsletterForm.appendChild(successMessage);
+                    
+                    setTimeout(() => {
+                        successMessage.remove();
+                    }, 3000);
+                } else {
+                    const errorMessage = document.createElement('div');
+                    errorMessage.className = 'text-red-400 text-xs text-center mt-2';
+                    errorMessage.textContent = 'Proszę podać prawidłowy adres email.';
+                    
+                    newsletterForm.appendChild(errorMessage);
+                    
+                    setTimeout(() => {
+                        errorMessage.remove();
+                    }, 3000);
+                }
+            });
+        });
+    </script>
+
+    <script id="product-interactions">
+        document.addEventListener('DOMContentLoaded', function() {
+            const productCards = document.querySelectorAll('.cursor-pointer');
+            
+            productCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    console.log('Product clicked:', this);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
