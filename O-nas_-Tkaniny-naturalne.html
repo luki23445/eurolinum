@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Nas - Euro Linum Polska</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D5A27',
+                        secondary: '#7FB069'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=Natural%20linen%20fabric%20texture%20with%20soft%20organic%20cotton%20fibers%2C%20minimalist%20clean%20white%20background%2C%20gentle%20natural%20lighting%2C%20serene%20peaceful%20atmosphere%2C%20sustainable%20eco-friendly%20materials%2C%20premium%20quality%20textiles%2C%20subtle%20earth%20tones%2C%20modern%20lifestyle%20aesthetic&width=1920&height=800&seq=hero-natural-fabrics&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="w-full px-6 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-leaf-line text-primary text-xl"></i>
+                    </div>
+                    <span class="font-['Pacifico'] text-2xl text-primary">Euro Linum Polska</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Strona główna</a>
+                    <a href="#" class="text-primary font-medium">O nas</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Produkty</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Kontakt</a>
+                </div>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-bg relative min-h-96 flex items-center">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-transparent"></div>
+            <div class="relative w-full px-6 py-20">
+                <div class="max-w-7xl mx-auto">
+                    <div class="max-w-2xl">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <span class="text-4xl">🌿</span>
+                            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                                Dlaczego warto wybierać tkaniny naturalne?
+                            </h1>
+                        </div>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            W świecie pełnym syntetyków i kompromisów, tkaniny naturalne są jak oddech świeżego powietrza - prawdziwe, trwałe i piękne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+                            <i class="ri-heart-pulse-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Przyjazne dla skóry</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Naturalne włókna, takie jak len czy bawełna, są przewiewne, delikatne i nie powodują podrażnień. Idealne dla alergików, dzieci i osób o wrażliwej skórze.
+                        </p>
+                    </div>
+
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-xl mb-6">
+                            <i class="ri-temp-cold-line text-secondary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Oddychające i komfortowe</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tkaniny naturalne pozwalają skórze oddychać, regulują temperaturę ciała i zapewniają komfort nawet w upalne dni.
+                        </p>
+                    </div>
+
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+                            <i class="ri-shield-check-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Trwałe i odporne</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Len i inne naturalne materiały są wyjątkowo wytrzymałe. Można je prać w wysokich temperaturach bez obawy o zniszczenie.
+                        </p>
+                    </div>
+
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-xl mb-6">
+                            <i class="ri-leaf-line text-secondary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Biodegradowalne i ekologiczne</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Naturalne tkaniny rozkładają się w środowisku, nie pozostawiając toksycznych odpadów. To wybór zgodny z ideą zrównoważonego rozwoju.
+                        </p>
+                    </div>
+
+                    <div class="fade-in bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-1">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+                            <i class="ri-palette-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Estetyczne i ponadczasowe</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ich faktura, kolorystyka i styl nie podlegają chwilowym modom. Naturalne tkaniny dodają wnętrzom i ubraniom klasy oraz autentyczności.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fade-in bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-12 text-center">
+                    <div class="max-w-4xl mx-auto">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                            A my, jako <strong>Euro Linum Polska</strong>, wybieramy dla Ciebie tylko to, co najlepsze. Bo jakość zaczyna się od natury. Tkaniny naturalne to nie tylko decyzja estetyczna - to świadomy wybór, który niesie za sobą szereg korzyści dla zdrowia, środowiska i jakości życia.
+                        </p>
+                        <p class="text-xl text-gray-800 font-medium mb-8">
+                            Wybierając nas, wybierasz więcej niż tkaninę. Wybierasz oddech natury, trwałość na lata i estetykę, która nie przemija. Bo dla nas najważniejszy jesteś Ty - Twój komfort, Twoje wartości, Twój styl życia.
+                        </p>
+                        <div class="inline-flex items-center space-x-3 bg-white px-8 py-4 rounded-full shadow-md">
+                            <span class="text-2xl">🌿</span>
+                            <p class="text-lg font-semibold text-primary">
+                                Z natury wybieramy to, co najczystsze. Z rynku to, co najdoskonalsze.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-6 bg-gray-50">
+            <div class="max-w-6xl mx-auto text-center">
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Przekonaj się sam</h2>
+                    <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                        Odkryj naszą kolekcję naturalnych tkanin i poczuj różnicę, którą daje prawdziwa jakość.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="!rounded-button whitespace-nowrap bg-primary text-white px-8 py-4 font-medium hover:bg-primary/90 transition-colors">
+                            Zobacz produkty
+                        </button>
+                        <button class="!rounded-button whitespace-nowrap border-2 border-primary text-primary px-8 py-4 font-medium hover:bg-primary hover:text-white transition-colors">
+                            Skontaktuj się z nami
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-leaf-line text-secondary"></i>
+                        </div>
+                        <span class="font-['Pacifico'] text-xl text-white">Euro Linum Polska</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Naturalne tkaniny najwyższej jakości dla Twojego komfortu i stylu życia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Produkty</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Tkaniny lniane</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bawełna organiczna</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Jedwab naturalny</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Wełna merino</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Firma</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">O nas</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Misja</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Zrównoważony rozwój</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Kariera</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i class="ri-mail-line"></i>
+                            <span>info@eurolinum.pl</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="ri-phone-line"></i>
+                            <span>+48 123 456 789</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Warszawa, Polska</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Euro Linum Polska. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="scroll-animations">
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
